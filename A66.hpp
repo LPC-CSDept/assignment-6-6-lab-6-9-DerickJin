@@ -14,7 +14,7 @@ int maxmin(int a,int b,int c,int& max,int& min)
     {
         min = b;
     }
-    else if (min > c)
+    if (min > c)
     {
         min = c;
     }
@@ -23,11 +23,11 @@ int maxmin(int a,int b,int c,int& max,int& min)
     {
         max = b;
     }
-    else if (max < c)
+    if (max < c)
     {
         max = c;
     }
-    
+
     difference = max-min;
     return difference;
 }
